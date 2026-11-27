@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "NEON POS - Sistema de gestión comercial y punto de venta",
   "scripts": {
-    "build": "mkdir -p www && cp index.html www/index.html && esbuild biometric-entry.js --bundle --format=iife --target=es2017 --outfile=www/biometric-bridge.js"
+    "build": "mkdir -p www && esbuild biometric-entry.js --bundle --format=iife --target=es2017 --outfile=www/biometric-bridge.js"
   },
   "dependencies": {
     "@aparajita/capacitor-biometric-auth": "^8.0.2",
